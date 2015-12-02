@@ -18,9 +18,7 @@ html {
     height: 100%;
     position: fixed;
     color: white;
-    margin-top: 0;
-	margin-bottom: 0; 
-	margin-left: 0;
+	margin: 0;
     padding: 0;
      
 }
@@ -171,16 +169,24 @@ html {
     height: 100vh;
     z-index: 2;
 	font-size: 22px;
+	position: fixed;
+}
+
+liftoff p {
+	margin-right: 125px;
 }
 #ptci {
-	width: 1000px;
+	float: right;
+	margin-right: 50px;
+	margin-left: 30px;
 }
 #ptci img{
-	height: 250px; 
-	width: 300px; 
+	height: 300px; 
+	width: 400px; 
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 45px;
 
 }
 
