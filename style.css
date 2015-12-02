@@ -197,15 +197,16 @@ liftoff p {
 
 #eyewitness div {
    
-    margin-left: 3vw;
-    display: inline-block;
+    margin-right: 50px;
+	margin-left:20px;
+	float: right;
 }
 
 #eyewitness div img {
    
-    height: 200px;
+    height: 400px;
     width: 250px;
-    margin-left: 1vw;
+    margin-left: 1px;
 
 }
 
