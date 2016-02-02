@@ -216,17 +216,37 @@ html {
 
 #raidin p { 
     padding-right: 20px;
+    position: relative;
+    margin-right: 225px;
 }
 
 #raidin img { 
     height: 200px;
     width: 200px;
     float: right;
+    margin-right: 20px;
+    border-radius: 5px;
 }
 
 #raidin a { 
     color: tomato;
     font-style: bold;
+}
+
+#ri_0 { 
+    height: 200px;
+    width: 100px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
+}
+
+#ri_2 { 
+    height: 200px;
+    width: 100px;
+    position: relative;
+    float: right;
+    margin-right: 20px;
 }
 
 #vets img { 
