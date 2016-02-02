@@ -1,11 +1,19 @@
 html {
     font-family: Roboto;
-    background-image: url("https://40.media.tumblr.com/8416f3e99c7beda08d072b1aab9b031c/tumblr_nxw50pcCJq1sh14upo1_540.jpg");
+    background-image: url("firecrackers.png");
     background-repeat: no-repeat; 
     background-size: cover;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
     
+.active { 
+    visibility: visible;
+}
+
+.hidden { 
+    visibility: hidden;
+}
 
 .inline {
     height: 100vh;
@@ -15,32 +23,32 @@ html {
 #menu {
     background-color: tomato;
     width: 200px;
-    height: 100%;
+    height: 130%;
     position: fixed;
     color: white;
-	margin: 0;
-    padding: 0;
+	margin-left: -10px;
+    margin-top: -50px;
+        padding: 0;
      
 }
 
 #menu h2 {
-    margin-top: 50px;
-	margin-bottom: 20px;
+    margin-top: 10px;
+	margin-bottom: 10px;
 	font-family: Roboto;
+    font-size: 37px;
 }
 
 #prof img {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    height: 250px;
+    width: 200px;
     margin-left: auto; 
     margin-right: auto;
-	padding-bottom: 20px;
 }
 
 #menu div {
     text-align: center;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #menu span div {
@@ -55,49 +63,47 @@ html {
     background-color: red;
 }
 
+#contact { 
+    border-top: 2px solid white;
+}
+
+#contact p { 
+    font-size: 16px;
+}
+
 #resume a {
     text-decoration: none; 
     color: white;
     
 }
 
-#content {
-    min-width: 700px; 
-    margin-left: 225px;
-    margin-top: 50px;
-    float: center;
-	margin-bottom: 75px;
-
+#stuff { 
+    position: relative;
 }
 
-#content p {
 
-    font-size: 16px;
-    margin-right: 10px;
-}
-
-#content h1 {
-    font-size: 40px;
-}
-
-#content h4 {
-    font-size: 22px;
+#stuff h4 {
+    line-height: 50%;
 	margin: 0px;
 }
 
 
 #about {
-    position: relative;
-    z-index; 4;
+    position: fixed;
+    margin-left: 250px;
+    margin-right: 25px;
+    margin-top: 45px;
+    z-index: 1;
 }
 
 #about p {
-	font-size: 16px;
+	font-size: 18px;
+    padding-right: 45px;
 }
 
 #baby img {
-    height: 200px; 
-    width: 200px;
+    height: 300px; 
+    width: 300px;
     border-radius: 50%;
     float: right;
 	margin-right: 100px;
@@ -105,124 +111,166 @@ html {
 
 }
 
-#raidin {
-    position: relative;
-    z-index: 3;
-	margin-bottom: 75px;
+#container { 
+    margin: 0;
 }
 
-#logo {
-	float: right;
-	margin-right: 100px;
-	margin-left: 50px;
-}
-
-#logo img {
-	height: 200px;
-	width: 200px;
-	border-radius: 25px;
-}
-
-#raidin p {
-	margin-right: 100px;
-}
-
-#raidin div {
-    height: 300px;
-    width: 200px;
-    margin-left: 5px;
-    display: inline-block;
-}
-
-#raidin li { 
-	font-size: 20px;
-}
-
-#ri_head {
-    background-color: none;
-    display: inline-block;
-   
-}
-
- 
-#purpose {
-    display: inline;
-}
-
-#ri_1 {
-    content: url("https://cdn-images-1.medium.com/max/800/1*vWXUU6Yh01CKvbIDyVEP6g.jpeg");
-}
-
-#ri_2 {
-    content: url("https://cdn-images-1.medium.com/max/800/1*EqzL2YpvaiXOPV0L6iRRjg.png");
-}
-
-#ri_3 {
-     content: url("https://cdn-images-1.medium.com/max/600/1*oaOgiuMaM3E1yhaqKMFb3g.png");
-}
-
-#space {
-    height: 3vh;
-    width: 3vw;
-     
-}
-#liftoff {
-    height: 100vh;
-    z-index: 2;
-	font-size: 22px;
-	position: relative;
-}
-
-#liftoff p {
-	margin-right: 125px;
-}
-
-#ptci {
-	float: right;
-	margin-right: 50px;
-	margin-left: 30px;
-    position: relative;
-}
-#ptci img{
-	height: 300px; 
-	width: 400px; 
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 45px;
-
-}
-
-#eyewitness {
-    position: relative; 
-    z-index: 1; 
-}
-
-#eyewitness div {
-   
-    margin-right: 50px;
-	margin-left:20px;
-	float: right;
-}
-
-#eyewitness div img {
-   
-    height: 400px;
-    width: 250px;
-    margin-left: 1px;
-
-}
-
-#contact {
-    position: fixed; 
+#portfolio { 
+    margin-left: 200px;
+    padding-top: 15px;
+    padding-left: 20px;
+    position: absolute;
     z-index: 0;
 }
 
-#contact a {
-    text-decoration: none;
+#portfolio div { 
+    height: 150px;
+    width: 850px;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 2px solid white;
 }
 
-.hide {
-    display: none;
+.ready:hover { 
+    border: 2px solid tomato;
+    cursor: pointer;
+}
+
+
+#menu a { 
+    text-decoration: none;
+    color: white;
+}
+
+#portfolio  { 
+    
+    margin-top: 45px;
+}
+
+#portfolio img { 
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+    position: relative;
+    margin: 0;
+    margin-left: 5px;
+    padding: 0px;
+    float: right;
+    opacity: 1;
+}
+
+
+#portfolio h1 { 
+    font-size: 50px;
+    padding-bottom: 10px;
+
+}
+
+#complete div:hover {
+
+    border: 2px solid tomato;
+
+}
+
+#portfolio h2 { 
+    font-size: 40px;
+    margin-bottom: 0px;
+}
+
+.role { 
+    font-style: italic;
+    line-height: 50%;
+    color: tomato;
+}
+
+#portfolio h3 { 
+    padding-top: 10px;
+    font-size: 25px;
+    margin-bottom: 0px;
+    line-height: 50%;
+}
+
+#portfolio p { 
+    font-size: 18px;
+}
+
+
+#raidin {
+    margin-left: 250px;
+    padding-top: 15px;
+    padding-right: 25px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+#raidin h4 { 
+    line-height: 5px;
+}
+
+#raidin img { 
+    height: 200px;
+    width: 200px;
+    float: right;
+}
+
+#raidin a { 
+    color: tomato;
+    font-style: bold;
+}
+
+#vets img { 
+    border-left: 1px solid blue;
+}
+
+#food { 
+    opacity: 0.5;
+}
+
+#ptci {
+
+    position: fixed;
+    z-index: 4;
+    margin-left: 225px;
+    margin-right: 30px;
+}
+
+
+#ptci img { 
+    height: 200px;
+    width: 300px;
+    float: right;
+    margin-left: 15px;
+}
+
+#eyewitness { 
+    margin-left: 225px;
+    margin-right: 30px;
+    position: fixed;
+    height: 100vh;
+
+}
+
+#eyewitness img { 
+    height: 450px;
+    width: 250px;
+    float: right;
+    margin-left: 25px;
+}
+
+#resume div { 
+    margin-left: 250px;
+}
+
+#resume img { 
+    height: 900px;
+    width: 700px;
+    position: relative;
+    margin-left: 300px;
+    margin-top: 25px;
+    z-index: 3;
 }
 
